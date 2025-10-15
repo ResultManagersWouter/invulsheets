@@ -26,13 +26,15 @@ Bij een object uit de CAD-tekening: vul het CAD-ID in.
 
 Bij een bestaand GISIB-object: vul het GISIB-ID in.
 Dit ID is te vinden via:
-https://data.amsterdam.nl/data/geozoek/?center=52.3735159%2C4.8892885&lagen=oor-groenobjecten%7Coor-verhardingen%7Coor-terreindelen&legenda=true&modus=kaart&term=Objecten+Openbare+Ruimte&zoom=11
+https://data.amsterdam.nl/data/geozoek/?center=52.3730842%2C4.8933146&legenda=true
+Ga naar de kaartlaag aan de rechterkant 'Objecten Openbare Ruimte', zodra je op de locatie bent waar je op ingezoomed moet zijn, klik je de objecttypes aan die voor jou relevant zijn. 
+Klik op het object. Bij de titel staat een nummer, vermeld dit nummer bij gisib-ID als het **niet** om een CAD-tekening gaat.
 
 Daarna geef je, indien van toepassing, het objecttype, type, type gedetailleerd en extra gedetailleerd op.
 Als een waarde niet van toepassing is, laat je het veld leeg.
 
 De aannemer vult vervolgens alle groene cellen in.
-Deze groene cellen zijn de gegevens die volgens de OTL moeten worden aangeleverd.
+Deze **groene** cellen zijn de gegevens die volgens de OTL door de aannemer moeten worden aangeleverd.
 De grijze cellen hoeven niet te worden ingevuld.
 
 Als een groen veld een zwarte rand heeft, betreft het een keuzelijst:
