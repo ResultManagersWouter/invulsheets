@@ -8,7 +8,7 @@ from domain_values import create_domain_values
 from attributes import create_attributes_per_typering
 from type_taxonomy import create_overview_taxonomy,create_type_table
 from utils import print_sheet_names
-from global_vars import vandaag, ROWS_OUPUT
+from global_vars import vandaag, ROWS_OUPUT,OUTPUT_PATH
 
 from output_sheet import build_workbook_minimal
 
@@ -64,7 +64,7 @@ if __name__ == "__main__":
     # attribuuttabel = attributes_per_typering,
     # domein_waarden = domein_waarden,
     # columns  =cols,
-    # output_path = "lol.xlsx",
+    # output_path = OUTPUT_PATH",
     # fp_bomen = filepaths["bomen"],
     # fp_beplanting  = filepaths["groen"],
     # fp_verharding =  filepaths["grijs"],
