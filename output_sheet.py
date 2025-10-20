@@ -148,7 +148,7 @@ def build_workbook_minimal(
         ws_attr = wb.create_sheet(SHEETS_OUT.SHEET_ATTR.value)
         r1a, c1a, r2a, c2a = write_df(ws_attr, df_attr, start_row=1, start_col=1)
         if r2a >= r1a:
-            create_table(ws_attr, 1, 1, r2a, c2a, "AttributenTabel", style_medium=8)
+            create_table(ws_attr, 1, 1, r2a, c2a, "Taxonomie_tabel", style_medium=8)
 
     # 5️⃣ 'domeinwaarden' sheet (subset + fallback)
     if domein_waarden is not None and not domein_waarden.empty:
@@ -157,7 +157,7 @@ def build_workbook_minimal(
         domein_subset = domein_waarden.loc[:, cols_present]
         r1d, c1d, r2d, c2d = write_df(ws_dom, domein_subset, start_row=1, start_col=1)
         if r2d >= r1d and c2d >= c1d:
-            create_table(ws_dom, 1, 1, r2d, c2d, "DomeinwaardenTabel", style_medium=7)
+            create_table(ws_dom, 1, 1, r2d, c2d, "Domein_tabel", style_medium=7)
 
     # 6️⃣ 'variabelen' sheet (met waarden in A-kolom)
     ws_var = wb.create_sheet(SHEETS_OUT.SHEET_VAR.value)

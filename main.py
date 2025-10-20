@@ -59,13 +59,13 @@ if __name__ == "__main__":
         "Type extra gedetailleerd",
     ]
 
-    # build_workbook_minimal(
-    # objecttype_tabel = objecttype_tabel,
-    # attribuuttabel = attributes_per_typering,
-    # domein_waarden = domein_waarden,
-    # columns  =cols,
-    # output_path = OUTPUT_PATH",
-    # fp_bomen = filepaths["bomen"],
-    # fp_beplanting  = filepaths["groen"],
-    # fp_verharding =  filepaths["grijs"],
-    # invul_data_rows= ROWS_OUPUT)
+    build_workbook_minimal(
+    objecttype_tabel = objecttype_tabel,
+    attribuuttabel = attributes_per_typering,
+    domein_waarden = domein_waarden,
+    columns  =cols,
+    output_path = OUTPUT_PATH,
+    fp_bomen = filepaths["bomen"],
+    fp_beplanting  = filepaths["groen"],
+    fp_verharding =  filepaths["grijs"],
+    invul_data_rows= ROWS_OUPUT)
