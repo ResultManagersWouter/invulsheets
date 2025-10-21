@@ -146,7 +146,7 @@ EN:
 ```
 
 ### 5.4 Verborgen kolom “sleutel” / Hidden key column
-**NL (I2):**
+**NL (I2) - formula:**
 ```
 =TEKST.COMBINEREN(",";ONWAAR;$D2:$G2)
 ```
@@ -157,7 +157,7 @@ EN:
 
 Naar beneden doortrekken tot en met einde tabel (cell 101)
 
-### 5.5 Optionele hulpkolom / Optional helper column (J2)
+### 5.5  hulpkolom / helper column (J2)
 **NL:**
 ```
 =ALS($D2<>"";ALS($D2="Terreindeel";"Groenobject";$D2);"")
