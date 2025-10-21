@@ -201,7 +201,7 @@ Attribuuttabel_n= Attribuuttabel   ; exact data-bereik / exact data area
 ---
 
 ## 🎨 Stap 7 — Voorwaardelijke opmaak / Conditional Formatting (matrix)
-Toepassen op matrix met kolomkoppen (attributen) en rijen (sleutel).  
+Toepassen op matrix met kolomkoppen (attributen) en rijen (sleutel), START K2   .  
 Apply to the attribute matrix area (columns = attributes, rows = key).
 
 **7.1 Groen / Green (applicable)**  
@@ -233,7 +233,7 @@ EN:
 ```
 =NOT(IF(ISREF(INDIRECT($J2 & "_" & SUBSTITUTE(SUBSTITUTE(K$1," ","_"),"-","_"))),COUNTA(INDIRECT($J2 & "_" & SUBSTITUTE(SUBSTITUTE(K$1," ","_"),"-","_")))=0,TRUE))
 ```
-
+Als alles in K2 is uitgevoerd, sleep door tot het laatste attribuut en vervolgens tot en met cell 101 (einde tabel)
 ---
 
 ## 🧩 Stap 8 — Lege fallback / Blank named range
