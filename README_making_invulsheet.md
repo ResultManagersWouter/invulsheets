@@ -169,9 +169,15 @@ Naar beneden doortrekken tot en met einde tabel (cell 101)
 Naar beneden doortrekken tot en met einde tabel (cell 101)
 ---
 ### 5.6  Transpose Attributen op K1
+**NL:**
 ```
-=TRANSPONEREN(Attribuuttabel [OTLProperty_prefLabel])
+=TRANSPONEREN(Attribuuttabel[OTLProperty_prefLabel])
 ```
+**EN:**
+```
+=TRANSPOSE(Attribuuttabel[OTLProperty_prefLabel])
+```
+
 
 
 ## 🧱 Stap 6 — Benoemde bereiken en tabellen / Named ranges & tables
