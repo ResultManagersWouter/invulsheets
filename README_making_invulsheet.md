@@ -174,7 +174,7 @@ Controleer / Verify:
 - `Attribuuttabel` op / on **Attributen**  
 - `Taxonomie_tabel` op / on **Type Taxonomie**
 
-Maak / Create (both localized specifiers shown):
+Maak / Create de volgende variabelen in de name manager:
 ```
 Nederlands:
 Header = Attribuuttabel[#Kopteksten]
