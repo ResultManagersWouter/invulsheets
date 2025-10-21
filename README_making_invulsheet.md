@@ -201,8 +201,8 @@ Attribuuttabel_n= Attribuuttabel   ; exact data-bereik / exact data area
 ---
 
 ## 🎨 Stap 7 — Voorwaardelijke opmaak / Conditional Formatting (matrix)
-Toepassen op matrix met kolomkoppen (attributen) en rijen (sleutel), START K2   .  
-Apply to the attribute matrix area (columns = attributes, rows = key).
+Start met K2 voor het toepassen, voer deze drie allemaal eerst uit in deze cell. 
+Apply to the attribute matrix area (columns = attributes, rows = key), vervolgens naar rechts slepen en dan naar onder.
 
 **7.1 Groen / Green (applicable)**  
 NL:
