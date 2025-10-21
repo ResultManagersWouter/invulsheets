@@ -236,7 +236,7 @@ EN:
 Als alles in K2 is uitgevoerd, sleep door tot het laatste attribuut en vervolgens tot en met cell 101 (einde tabel)
 ---
 
-## 🧩 Stap 8 — Lege fallback / Blank named range
+## 🧩 Stap 8 — Lege fallback / Blank (named range via de name manager een variabele aanmaken)
 **NL & EN:**
 ```
 _Blank = variabelen!$B$1
