@@ -184,7 +184,7 @@ Header = Attribuuttabel[#Headers]
 
 Attributen= Attribuuttabel[OTLProperty_prefLabel]
 
-Attribuuttabel_n= Attributen!$A$2:$Z$500   ; exact data-bereik / exact data area
+Attribuuttabel_n= Attribuuttabel   ; exact data-bereik / exact data area
 ```
 
 ---
