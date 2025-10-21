@@ -83,11 +83,11 @@ Check of deze waardes er zijn:
 Kolommen / Columns: `CAD-ID`, `GISIB-ID`, `Bewerkingscode`, `Objecttype`, `Type`, `Type gedetailleerd`, `Type extra gedetailleerd` (≥100 rijen / rows).
 
 ### 5.1 Keuzelijst “Bewerkingscode” / Dropdown “Bewerkingscode”
-**NL (Gegevensvalidatie → Lijst → Bron):**
+**NL (Gegevensvalidatie → Lijst (onder Toestaan) → Bron):**
 ```
 =Bewerkingscode
 ```
-**EN (Data Validation → List → Source):**
+**EN (Data Validation → List (Allow) → Source):**
 ```
 =Bewerkingscode
 ```
