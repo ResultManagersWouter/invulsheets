@@ -145,7 +145,7 @@ def build_workbook_minimal(
     # 4️⃣ 'attributen' sheet (optioneel) — per kolom sorteren (aflopend, NaN onderaan)
     if objecttype_tabel is not None and not objecttype_tabel.empty:
         df_attr = sort_each_column_desc_na_last(objecttype_tabel)
-        ws_attr = wb.create_sheet(SHEETS_OUT.SHEET_ATTR.value)
+        ws_attr = wb.create_sheet(SHEETS_OUT.SHEET_TAX.value)
         r1a, c1a, r2a, c2a = write_df(ws_attr, df_attr, start_row=1, start_col=1)
         if r2a >= r1a:
             create_table(ws_attr, 1, 1, r2a, c2a, "Taxonomie_tabel", style_medium=8)
