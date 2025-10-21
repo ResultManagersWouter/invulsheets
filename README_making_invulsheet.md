@@ -78,6 +78,8 @@ Als deze nog niet in de name manager staat:
 ---
 
 ## 🧾 Stap 5 — `Invulsheet` opzetten / Setup `Invulsheet`
+Check of deze waardes er zijn: 
+
 Kolommen / Columns: `CAD-ID`, `GISIB-ID`, `Bewerkingscode`, `Objecttype`, `Type`, `Type gedetailleerd`, `Type extra gedetailleerd` (≥100 rijen / rows).
 
 ### 5.1 Keuzelijst “Bewerkingscode” / Dropdown “Bewerkingscode”
