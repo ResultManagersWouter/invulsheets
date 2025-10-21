@@ -257,7 +257,13 @@ _Blank = variabelen!$B$1
 ---
 
 ## 🗓️ Stap 10 — Datumopmaak / Date formatting
-**NL:** Getalnotatie → Aangepast → `dd-mm-jjjj`  
+- Begin garanatieperiode
+- Einde garantieperiode
+- Opleverdatum
+- Objecteindtijd
+
+**NL:** Getalnotatie → Aangepast → `dd-mm-jjjj`
+
 **EN:** Number Format → Custom → `dd-mm-yyyy`
 
 ---
