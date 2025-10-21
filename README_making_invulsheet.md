@@ -82,7 +82,17 @@ Check of deze waardes er zijn:
 
 Kolommen / Columns: `CAD-ID`, `GISIB-ID`, `Bewerkingscode`, `Objecttype`, `Type`, `Type gedetailleerd`, `Type extra gedetailleerd` (≥100 rijen / rows).
 
-### 5.1 Keuzelijst “Bewerkingscode” / Dropdown “Bewerkingscode”
+### 5.1 Regel: precies één ID / Rule: exactly one ID (CAD or GISIB)
+**NL (A2 & B2 → Gegevensvalidatie → Aangepast → Formule):**
+```
+=OF(EN($A2<>"";$B2="");EN($A2="";$B2<>""))
+```
+**EN (A2 & B2 → Data Validation → Custom → Formula):**
+```
+=OR(AND($A2<>"",$B2=""),AND($A2="",$B2<>""))
+```
+
+### 5.2 Keuzelijst “Bewerkingscode” / Dropdown “Bewerkingscode”
 **NL (Gegevensvalidatie → Lijst (onder Toestaan) → Bron):**
 ```
 =Bewerkingscode
@@ -93,15 +103,6 @@ Kolommen / Columns: `CAD-ID`, `GISIB-ID`, `Bewerkingscode`, `Objecttype`, `Type`
 ```
 *(of gebruik / or use direct cell range)*
 
-### 5.2 Regel: precies één ID / Rule: exactly one ID (CAD or GISIB)
-**NL (A2 & B2 → Gegevensvalidatie → Aangepast → Formule):**
-```
-=OF(EN($A2<>"";$B2="");EN($A2="";$B2<>""))
-```
-**EN (A2 & B2 → Data Validation → Custom → Formula):**
-```
-=OR(AND($A2<>"",$B2=""),AND($A2="",$B2<>""))
-```
 
 ### 5.3 Hiërarchische keuzelijsten / Hierarchical dropdowns
 **Objecttype (kolom D / column D)**  
