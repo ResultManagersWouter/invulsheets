@@ -38,7 +38,7 @@ Bron: Microsoft Support (gestructureerde verwijzingen / structured references).
 ---
 
 ## 🧩 Stap 1 — `Attributen` vullen / Fill `Attributen`
-1) Kopieer data → **Attributen!A1** → **Invoegen → Tabel** (kopteksten aan) → hernoem tabel: **`Attribuuttabel`**.  
+1) Als de data op Attributen leeg is. Kopieer data → **Attributen!A1** → **Invoegen → Tabel** (kopteksten aan) → hernoem tabel: **`Attribuuttabel`**.  
 EN: Copy data → **Attributen!A1** → **Insert → Table** (headers on) → rename table: **`Attribuuttabel`**.
 
 **Alternatief / Alternative (named range):**  
@@ -47,20 +47,21 @@ EN: Copy data → **Attributen!A1** → **Insert → Table** (headers on) → re
 ---
 
 ## 🧭 Stap 2 — `Type Taxonomie` vullen / Fill `Type Taxonomie`
-1) Plak data → **Type Taxonomie!A1**.  
-2) **Ctrl+G → Speciaal → Constanten** / **Ctrl+G → Special → Constants**.  
-3) **Ctrl+F → Vervangen → “ZZ” → leeg** / **Ctrl+F → Replace → “ZZ” → empty**.  
-4) **Invoegen → Tabel** / **Insert → Table**, hernoem naar **`Taxonomie_tabel`**.  
+1) Script vult autamatisch de sheet, staat het erniet, Plak data → **Type Taxonomie!A1**.
+2) **Sta in de tabel op A1 Select all (ctrl A) → Ctrl+G → Speciaal → Constanten** / **Ctrl+G → Special → Constants**.  
+3) **Ctrl+F → Vervangen → “ZZ” → leeg** / **Ctrl+F → Replace → “ZZ” → empty**, sluiten
 5) **Formules → Namen maken op basis van selectie (Bovenste rij)** / **Formulas → Create from Selection (Top row)**.
 
 ---
 
 ## 🧱 Stap 3 — `domeinwaarden` vullen / Fill `domeinwaarden`
-1) Plak data → **domeinwaarden!A1** → **Ctrl+G → Speciaal/ Special → Constanten/Constants**.  
+1) Indien de waarde zijn gevuld in de sheet: Ga naar A1: **Ctrl A** → **Ctrl+G → Speciaal/ Special → Constanten/Constants**.  
 2) **Formules/ Formulas → Namen maken / Create from Selection (Bovenste rij / Top row)**.
 
 
 ## 🔢 Stap 4 — `variabelen` vullen / Fill `variabelen`
+
+
 | Cel / Cell | Waarde / Value |
 |---|---|
 | A1 | Bewerkingscode |
@@ -68,6 +69,8 @@ EN: Copy data → **Attributen!A1** → **Insert → Table** (headers on) → re
 | A3 | Verwijderen |
 | A4 | Aanpassen |
 | A5 | Instant laten |
+
+Als deze nog niet in de name manager staat:
 
 **Named range / Benoemd bereik:**  
 - `Bewerkingscode = variabelen!$A$2:$A$5`
