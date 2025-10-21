@@ -1,7 +1,12 @@
 # 🧭 README – Na het draaien van het script / After Running the Script
 ### Invulsheet afronden in Excel / Completing the Invulsheet in Excel
 
-Deze handleiding beschrijft de **stappen in Excel ná het draaien van het script** om het *Invulsheet* volledig gebruiksklaar te maken.  
+Deze handleiding beschrijft de **stappen in Excel ná het draaien van het script** om het *Invulsheet* volledig gebruiksklaar te maken. 
+Dit houdt in voor de collega die de invulsheet gaat afmaken:
+- Gegevensvalidatie lijsten: zodat de aannemer keuzes kan maken bij het invullen van data
+- Variabelen aanmaken: Via Tables en Namemanager variabelen
+- Conditional formatting: waarin aangegeven wordt per objecttype welke attributen volgens de OTL moeten worden aangeleverd. 
+
 This guide describes the **manual Excel steps after the generation script** to finalize the Invulsheet.
 
 > Formules staan **in NL én EN varianten onder elkaar**. Where applicable, **structured references** (table specifiers) are shown for both Dutch and English Excel.
