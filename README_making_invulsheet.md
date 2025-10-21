@@ -146,11 +146,11 @@ EN:
 ```
 
 ### 5.4 Verborgen kolom “sleutel” / Hidden key column
-**NL (I2) - formula:**
+**NL (I2) - formule in cell:**
 ```
 =TEKST.COMBINEREN(",";ONWAAR;$D2:$G2)
 ```
-**EN (I2):**
+**EN (I2) formula in cell:**
 ```
 =TEXTJOIN(",",FALSE,$D2:$G2)
 ```
