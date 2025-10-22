@@ -7,6 +7,7 @@ Dit houdt in voor de collega die de invulsheet gaat afmaken:
 - Variabelen aanmaken: Via Tables en Namemanager variabelen
 - Conditional formatting: waarin aangegeven wordt per objecttype welke attributen volgens de OTL moeten worden aangeleverd. 
 
+
 This guide describes the **manual Excel steps after the generation script** to finalize the Invulsheet.
 
 > Formules staan **in NL én EN varianten onder elkaar**. Where applicable, **structured references** (table specifiers) are shown for both Dutch and English Excel.
@@ -94,7 +95,7 @@ Kolommen / Columns: `CAD-ID`, `GISIB-ID`, `Bewerkingscode`, `Objecttype`, `Type`
 ```
 **EN (A2 & B2 → Data Validation → Custom → Formula):**
 ```
-=OR(AND($A2<>"",$B2=""),AND($A2="",$B2<>""))
+=OR(AND($A2<>"";$B2="");AND($A2="";$B2<>""))
 ```
 
 ### 5.2 Keuzelijst “Bewerkingscode” / Dropdown “Bewerkingscode”
@@ -127,7 +128,7 @@ NL:
 ```
 EN:
 ```
-=INDIRECT(SUBSTITUTE(SUBSTITUTE($D2," ","_"),"-","_"))
+=INDIRECT(SUBSTITUTE(SUBSTITUTE($D2;" ";"_");"-";"_"))
 ```
 
 **Type gedetailleerd (kolom F) — afhankelijk van E / dependent on E**  
@@ -137,7 +138,7 @@ NL:
 ```
 EN:
 ```
-=INDIRECT(SUBSTITUTE(SUBSTITUTE($E2," ","_"),"-","_"))
+=INDIRECT(SUBSTITUTE(SUBSTITUTE($E2;" ";"_");"-";"_"))
 ```
 
 **Type extra gedetailleerd (kolom G) — afhankelijk van F / dependent on F**  
@@ -147,7 +148,7 @@ NL:
 ```
 EN:
 ```
-=INDIRECT(SUBSTITUTE(SUBSTITUTE($F2," ","_"),"-","_"))
+=INDIRECT(SUBSTITUTE(SUBSTITUTE($F2;" ";"_");"-";"_"))
 ```
 
 ### 5.4 Verborgen kolom “sleutel” / Hidden key column
@@ -157,7 +158,7 @@ EN:
 ```
 **EN (I2) formula in cell:**
 ```
-=TEXTJOIN(",",FALSE,$D2:$G2)
+=TEXTJOIN(",";FALSE;$D2:$G2)
 ```
 
 Naar beneden doortrekken tot en met einde tabel (cell 101)
@@ -169,7 +170,7 @@ Naar beneden doortrekken tot en met einde tabel (cell 101)
 ```
 **EN:**
 ```
-=IF($D2<>"",IF($D2="Terreindeel","Groenobject",$D2),"")
+=IF($D2<>"";IF($D2="Terreindeel";"Groenobject";$D2);"")
 ```
 Naar beneden doortrekken tot en met einde tabel (cell 101)
 ---
@@ -216,7 +217,7 @@ NL:
 ```
 EN:
 ```
-=IF(INDEX(Attribuuttabel_n,MATCH(K$1,Attributen,0),MATCH($I2,Header,0))=1,TRUE,FALSE)
+=IF(INDEX(Attribuuttabel_n;MATCH(K$1;Attributen;0);MATCH($I2;Header;0))=1;TRUE;FALSE)
 ```
 
 **7.2 Grijs / Gray (not applicable)**  
@@ -226,7 +227,7 @@ NL:
 ```
 EN:
 ```
-=IF(INDEX(Attribuuttabel_n,MATCH(K$1,Attributen,0),MATCH($I2,Header,0))=1,FALSE,TRUE)
+=IF(INDEX(Attribuuttabel_n;MATCH(K$1;Attributen;0);MATCH($I2;Header;0))=1;FALSE;TRUE)
 ```
 
 **7.3 Zwarte rand / Black border (enumerations)**  
@@ -236,7 +237,7 @@ NL:
 ```
 EN:
 ```
-=NOT(IF(ISREF(INDIRECT($J2 & "_" & SUBSTITUTE(SUBSTITUTE(K$1," ","_"),"-","_"))),COUNTA(INDIRECT($J2 & "_" & SUBSTITUTE(SUBSTITUTE(K$1," ","_"),"-","_")))=0,TRUE))
+=NOT(IF(ISREF(INDIRECT($J2 & "_" & SUBSTITUTE(SUBSTITUTE(K$1;" ";"_");"-";"_")));COUNTA(INDIRECT($J2 & "_" & SUBSTITUTE(SUBSTITUTE(K$1;" ";"_");"-";"_")))=0;TRUE))
 ```
 Als alles in K2 is uitgevoerd, sleep door tot het laatste attribuut en vervolgens tot en met cell 101 (einde tabel)
 ---
@@ -256,7 +257,7 @@ _Blank = variabelen!$B$1
 ```
 **EN (e.g., K2):**
 ```
-=IF(ISREF(INDIRECT($J2 & "_" & SUBSTITUTE(SUBSTITUTE(K$1," ","_"),"-","_"))),INDIRECT($J2 & "_" & SUBSTITUTE(SUBSTITUTE(K$1," ","_"),"-","_")),_Blank)
+=IF(ISREF(INDIRECT($J2 & "_" & SUBSTITUTE(SUBSTITUTE(K$1;" ";"_");"-";"_")));INDIRECT($J2 & "_" & SUBSTITUTE(SUBSTITUTE(K$1;" ";"_");"-";"_"));_Blank)
 ```
 
 ---

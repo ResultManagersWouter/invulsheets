@@ -3,6 +3,8 @@
 Deze code genereert een Excel-werkboek vanuit OTL/asset-invulsheets (**Bomen**, **Beplantingen**, **Verhardingen**; **Water** kan later worden toegevoegd).
 Het werkboek bevat o.a. bladen voor toelichting, invul, attribuuttabel, attributen-hiërarchie, domeinwaarden en variabelen.
 
+Wanneer er een nieuwe asset wordt toevoegd, kijk hoe de gelaagdheid van typering is opgebouwd. Bomen is bijvoorbeeld anders opgebouwd nar beplantingen en verhardingen. Zie de manier van mapping in de mappings.py
+
 ## 📁 Benodigde invoer
 Je hebt de volgende Excel-bestanden (invulsheets/bronnen) nodig:
 - **OTL-catalogus** met minimaal de bladen:
@@ -52,7 +54,6 @@ Je kunt paden hardcoden of via `.env` aanleveren.
 FP_BOMEN=/pad/naar/bomen.xlsx
 FP_BEPLANTING=/pad/naar/beplantingen.xlsx
 FP_VERHARDING=/pad/naar/verhardingen.xlsx
-OUTPUT_XLSX=/pad/naar/werkboek.xlsx
 ```
 
 **Voorbeeld in code:**
