@@ -54,7 +54,7 @@ EN: Copy data → **Attributen!A1** → **Insert → Table** (headers on) → re
 
 ## 🧭 Stap 2 — `Type Taxonomie` vullen / Fill `Type Taxonomie`
 1) Script vult autamatisch de sheet, staat het erniet, Plak data → **Type Taxonomie!A1**.
-2) **Sta in de tabel op A1 Select all (ctrl A) → Ctrl+G → Speciaal → Constanten** / **Ctrl+G → Special → Constants**.  
+2) **Sta in de tabel op A1 Select all (ctrl A) → Ctrl+G → Speciaal → Constanten → ok **.  
 3) **Ctrl+F → Vervangen → “ZZ” → leeg** / **Ctrl+F → Replace → “ZZ” → empty**, sluiten
 5) **Formules → Namen maken op basis van selectie (Bovenste rij)** / **Formulas → Create from Selection (Top row)**.
 
